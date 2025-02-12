@@ -15,3 +15,16 @@ This repository contains all the source code, assets, and content used to build 
 - Any other media files (images, audio, etc.)
 
 ## Structure
+/index.html       # The homepage of the site /css/             # Folder containing the site's CSS files /js/              # Folder containing JavaScript files (if any) /assets/          # Folder for images, fonts, or other media
+## How to Contribute
+
+Feel free to fork this repository, create a branch, and submit pull requests if you have suggestions or improvements. Contributions are always welcome!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Made with passion, a touch of madness, and a hint of dark poetry.  
+For the full experience, visit [mydarknessrevealed.blog](https://mydarknessrevealed.blog).
