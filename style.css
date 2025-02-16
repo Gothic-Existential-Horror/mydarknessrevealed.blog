@@ -4,6 +4,12 @@
     font-size: 16px;
     white-space: nowrap; /* Prevent code from wrapping */
     overflow: hidden;
+    display: flex;               /* Added to center content */
+    flex-direction: column;    /* Added to center content */
+    align-items: center;       /* Added to center content */
+    justify-content: center;   /* Added to center content */
+    height: 100vh;             /* Added to center content */
+    background-color: black;   /* Added black background */
 }.matrix-code {
     animation: matrix-rain 2s linear forwards; /* Changed to forwards */
 }
