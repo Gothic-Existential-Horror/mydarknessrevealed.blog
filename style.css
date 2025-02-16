@@ -1,0 +1,14 @@
+#code-rain-container {
+    font-family: monospace;
+    color: #0f0; /* Green color */
+    font-size: 16px;
+    white-space: nowrap; /* Prevent code from wrapping */
+    overflow: hidden;
+}.matrix-code {
+    animation: matrix-rain 2s linear forwards; /* Changed to forwards */
+}
+
+@keyframes matrix-rain {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); } /* Changed to 0 */
+}
