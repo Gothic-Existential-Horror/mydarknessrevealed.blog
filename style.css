@@ -1,20 +1,17 @@
 #code-rain-container {
-    font-family: monospace;
-    color: #0f0; /* Green color */
-    font-size: 16px;
-    white-space: nowrap; /* Prevent code from wrapping */
-    overflow: hidden;
-    display: flex;               /* Added to center content */
-    flex-direction: column;    /* Added to center content */
-    align-items: center;       /* Added to center content */
-    justify-content: center;   /* Added to center content */
-    height: 100vh;             /* Added to center content */
-    background-color: black;   /* Added black background */
+    /*... other styles... */
+    font-size: 24px;
+    width: 100vw;
+    letter-spacing: 10px; /* Adjust as needed */
 }.matrix-code {
-    animation: matrix-rain 2s linear forwards; /* Changed to forwards */
+    animation: matrix-rain 2s linear forwards;
+    display: inline-block; /* Make characters flow individually */
+    animation-duration: 1s; /* Adjust the duration as needed */
 }
 
 @keyframes matrix-rain {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(0); } /* Changed to 0 */
+    0% { transform: translateY(-100%); opacity: 0; } /* Start from top */
+    20% { opacity: 1; } /* Fade in */
+    80% { opacity: 1; } /* Fade out */
+    100% { transform: translateY(100%); opacity: 0; } /* End at bottom */
 }
