@@ -1,24 +1,12 @@
-const container = document.getElementById('code-rain-container');
-const poemText = document.getElementById('poem-text').innerHTML;
-const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+~`|}{\:;?><,./-=";
+// scripts.js
 
-function createCodeRain() {
-    let codeRain = "";
-    for (let i = 0; i < poemText.length; i++) {
-        if (poemText[i] === '\n') {
-            codeRain += "<br>";
-        } else {
-            codeRain += `<span class="matrix-code">${characters.charAt(Math.floor(Math.random() * characters.length))}</span>`;
-        }
-    }
-    container.innerHTML = codeRain;
-}
+// Example: Toggle dark mode
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.createElement('button');
+    toggleButton.textContent = 'Toggle Dark Mode';
+    document.body.appendChild(toggleButton);
 
-function revealPoemText() {
-    setTimeout(() => {
-        container.innerHTML = poemText;
-    }, 2000); // Adjust the delay as needed
-}
-
-createCodeRain();
-revealPoemText();
+    toggleButton.addEventListener('click', function() {
+        document.body.classList.toggle('light-mode');
+    });
+});
