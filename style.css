@@ -1,17 +1,59 @@
-#code-rain-container {
-    /*... other styles... */
-    font-size: 24px;
-    width: 100vw;
-    letter-spacing: 10px; /* Adjust as needed */
-}.matrix-code {
-    animation: matrix-rain 2s linear forwards;
-    display: inline-block; /* Make characters flow individually */
-    animation-duration: 1s; /* Adjust the duration as needed */
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes matrix-rain {
-    0% { transform: translateY(-100%); opacity: 0; } /* Start from top */
-    20% { opacity: 1; } /* Fade in */
-    80% { opacity: 1; } /* Fade out */
-    100% { transform: translateY(100%); opacity: 0; } /* End at bottom */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #757575;
 }
